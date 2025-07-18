@@ -61,7 +61,7 @@
               
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://hellodfan.github.io/" target="_blank">Lei Fan</a><sup>1,2</sup><sup>*</sup>,</span>
+                <a href="https://hellodfan.github.io/" target="_blank">Lei Fan</a><sup>1</sup><sup>*</sup>,</span>
                 <span class="author-block">
                     Junjie Huang<sup>2</sup>,
                   <span class="author-block">
@@ -126,6 +126,17 @@
               </span>
 
 
+               <span class="link-block">
+                <a href="./static/pdfs/CCL_Supp_.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Supp.</span>
+              </a>
+            </span>
+
+
               <span class="link-block">
                 <a href="https://github.com/LGC-AD/AD-LGC" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
@@ -156,20 +167,20 @@
           <p>
             For anomaly detection (AD), early approaches often train separate models for individual classes, yielding high performance
              but posing challenges in scalability and resource management. Recent efforts have shifted toward training a single model capable
-              of handling multiple classes. However, directly extending early AD methods to multi-class settings often results in degraded performance.
+              of handling multiple classes. However, directly extending early AD methods to multi-class settings often results in degraded performance.     
           </p>
           <p>
              In this paper, we investigate this performance degradation observed in reconstruction-based methods, identifying the key issue:
               inter-class confusion. This confusion emerges when a model trained in multi-class scenarios incorrectly reconstructs samples from
-               one class as another, thereby exacerbating reconstruction errors. To this end, we propose a simple yet effective modification, 
-               called class-aware contrastive learning (CCL). By explicitly leveraging raw object category information (e.g., carpet or wood) as 
-               supervised signals, we introduce local CL to refine multiscale dense features, and global CL to obtain more compact feature 
+               one class as those of another, thereby exacerbating reconstruction errors. To this end, we propose a simple yet effective modification,
+              called class-aware contrastive learning (CCL). By explicitly leveraging raw object category information (e.g., carpet or wood) as 
+              supervised signals, we introduce local CL to refine multiscale dense features, and global CL to obtain more compact feature
                representations of normal patterns, thereby effectively adapting the models to multi-class settings. Experiments across five datasets
                 validate the effectiveness of our approach, demonstrating significant improvements and superior performance compared to state-of-the-art
                  methods. Notably, ablation studies indicate that pseudo-class labels can achieve comparable performance.
           </p>
           <p>                 
-                 (This is version 2 of the paper, which includes additional experiments and analysis, compared to the first version (V1: Revitalizing Reconstruction Models for Multi-class Anomaly Detection via Class-Aware Contrastive Learning ).)
+            (V2 includes additional experiments and analysis, compared to V1: Revitalizing Reconstruction Models for Multi-class Anomaly Detection via Class-Aware Contrastive Learning ).
           </p>
         </div>
       </div>
@@ -266,12 +277,11 @@ value in the resulting similarity matrix is identified. The most similar pairs a
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        # we will update the BibTex citation once the camera-ready version is available
-        @article{fan2024revitalizing,
-          title={Revitalizing Reconstruction Models for Multi-class Anomaly Detection via Class-Aware Contrastive Learning},
-          author={Fan, Lei and Huang, Junjie and Di, Donglin and Su, Anyang and Pagnucco, Maurice and Song, Yang},
+        @article{fan2025salvaging,
+          title={Salvaging the Overlooked: Leveraging Class-Aware Contrastive Learning for Multi-Class Anomaly Detection},
+          author={Fan, Lei and Huang, Junjie and Di, Donglin and Su, Anyang and Song, Tianyou and Pagnucco, Maurice and Song, Yang},
           journal={arXiv preprint arXiv:2412.04769},
-          year={2024}
+          year={2025}
         }
 
 
